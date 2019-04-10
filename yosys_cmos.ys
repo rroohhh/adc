@@ -1,0 +1,9 @@
+read_verilog gateware.v
+proc
+opt_clean
+check
+opt
+synth
+abc -g cmos2
+write_verilog
+stat
